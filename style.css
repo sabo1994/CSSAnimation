@@ -1,0 +1,40 @@
+#block1{
+	width: 200px;
+	height: 200px;
+	background: gold;
+	transition: 2s background, 2s width;
+	margin-left: 59px;
+}
+#block1:hover{
+	background: blue;
+	width: 400px;
+	padding: 50px ;
+}
+#block2 {
+	width: 200px;
+	height: 200px;
+	background: grey;
+}
+#block2:hover{
+	animation: spin 5s infinite;
+}
+
+
+@keyframes spin {
+0% {
+	transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	background: red;
+ }
+33% {
+transform: rotateX(-80deg) rotateY(-180deg) rotateZ(-100deg);
+background: yellow;
+ }
+60%{
+	transform: rotateX(80deg) rotateY(180deg) rotateZ(100deg);
+	background: green;
+ }
+100% {
+	transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	background: grey;
+ }
+}
